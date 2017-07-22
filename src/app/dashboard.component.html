@@ -1,0 +1,27 @@
+
+
+
+<h3>ACTORS OF GAMES OF THRONES</h3>
+<hero-search></hero-search>
+   
+
+  <!-- dashboard layout  -->
+  <a *ngFor="let hero of heroes"  [routerLink]="['/detail', hero.id]"  class="col-1-4">
+<div class="window">
+
+  <div class="overlay"></div>
+  <div class="box header">
+    <img src="{{hero.image}}" alt="" />
+    <h2>{{hero.name}}</h2>
+    <h4>Actor</h4>
+  </div>
+  <div class="box footer">
+    <ul>
+      <li><a href=""><span class="ion-ios-camera-outline"></span> ID: {{hero.id}}</a></li>
+      <li><a href=""><span class="ion-ios-camera-outline"></span> Age: {{hero.age}}</a></li>
+    </ul>
+  </div>
+</div>
+  </a>
+
+

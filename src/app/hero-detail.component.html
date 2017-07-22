@@ -1,0 +1,72 @@
+<!-- <div *ngIf="hero">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label>id: </label>{{hero.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name" />
+   </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+  
+</div> -->
+
+
+<aside class="profile-card">
+
+  <header>
+    <!-- here’s the actor -->
+    <a target="_blank" href="#">
+      <img src="{{hero.image}}"class="hoverZoomLink">
+    </a>
+
+    <!-- the actor name -->
+    <h1>
+           {{hero.name}} details!
+          </h1>
+
+    <!-- and role or location -->
+    <h2>
+            Name
+          </h2>
+
+  </header>
+
+  <!-- bit of a bio about the actor-->
+  <div class="profile-bio">
+
+    <p>
+        <input [(ngModel)]="hero.name" placeholder="name" />
+    </p>
+<button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+  </div>
+
+
+  
+  <!-- some social links to show off -->
+  <ul class="profile-social-links">
+    <li>
+      <a target="_blank" href="https://www.facebook.com/creativedonut">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://twitter.com/dropyourbass">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://github.com/vipulsaxena">
+        <i class="fa fa-github"></i>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://www.behance.net/vipulsaxena">
+       
+        <i class="fa fa-behance"></i>
+      </a>
+    </li>
+  </ul>
+
+</aside>

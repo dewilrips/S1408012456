@@ -1,0 +1,102 @@
+h1 {
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+/* nav a {
+
+   padding: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+} */
+/* Globals */
+/* 	Box Sizing Border-Box */
+html {  box-sizing: border-box; }
+*, *:before, *:after {  box-sizing: inherit; }
+
+/* Clearfixes */
+.container:before, .container:after,
+.navbar:before, .navbar:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.clearfix:after,
+.navbar:after {
+  clear: both;
+}
+/* Layout */
+.container {
+  padding: 0 20px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+/* ********************
+	Navbar
+*********************** */
+.navbar {
+	background-color: #303030;
+	font-size: 12px;
+	font-weight: bold;
+}
+.sitename {
+  float: left;
+  font-size: 25px;
+  line-height: 60px;
+  font-weight: normal;
+  padding-right: 30px;
+  text-decoration: none;
+  color: #ccc;
+}
+.sitename:hover,
+.sitename:focus {
+  color: #fff;
+}
+.navbar .nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.navbar li a {
+	display: inline-block;
+	float: left;
+	line-height: 60px;
+	padding: 0 30px;
+	color: #ccc;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.navbar li a:hover,
+.navbar li a:focus {
+	color: white;
+  background-color: #111;
+}
+
+
+
+
+
